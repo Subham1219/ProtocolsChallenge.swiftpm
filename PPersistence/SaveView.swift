@@ -6,27 +6,7 @@ struct SaveView: View {
     func WindowGroup() {
         @AppStorage("number1") var number1: Int = 0
         
-        var body: some View {
-            VStack {
-                Text("This is the SaveView")
-                    .padding()
-                Text("Number 1: \(number1)")
-                    .padding()
-            }
-        }
         Persistence()
-    }
-    
-    struct SaveView: View {
-        @AppStorage("number1") var number1: Int = 0
-        
-        var body: some View {
-            Text("This is the SaveView")
-                .padding()
-            Text("Number 1: \(number1)")
-                .padding()
-        }
-        
     }
     
     struct RetrieveView: View {
